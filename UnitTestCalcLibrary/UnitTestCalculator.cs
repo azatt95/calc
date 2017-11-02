@@ -28,6 +28,19 @@ namespace UnitTestCalcLibrary
         [TestMethod]
         public void TestSub()
         {
+            var calc = new Calculator();
+
+            var result = calc.Sub("3", "2");
+            var result1 = calc.Sub("0", "0");
+            var result2 = calc.Sub("100", "0");
+
+            var result3 = calc.Sub("a", "b");
+
+            Assert.AreEqual("1", result);
+            Assert.AreEqual("0", result1);
+            Assert.AreEqual("100", result2);
+
+            Assert.AreEqual("error", result3);
         }
     }
 }

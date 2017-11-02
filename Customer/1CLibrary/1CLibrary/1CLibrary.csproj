@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{95F158BF-5E50-4B8B-9EF2-ECFD82525495}</ProjectGuid>
+    <ProjectGuid>{151A4689-0234-44AF-895A-3D84071E9A24}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CalcLibrary</RootNamespace>
-    <AssemblyName>CalcLibrary</AssemblyName>
+    <RootNamespace>_1CLibrary</RootNamespace>
+    <AssemblyName>1CLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CalcLibrary">
+      <HintPath>..\..\..\CalcLibrary\bin\Debug\CalcLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,11 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator.cs" />
-    <Compile Include="IOperation.cs" />
-    <Compile Include="Operations\BaseOperation.cs" />
-    <Compile Include="Operations\SubOperation.cs" />
-    <Compile Include="Operations\SumOperation.cs" />
+    <Compile Include="Расчитать.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
